@@ -1,0 +1,23 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+
+DirectoryIndex page51486733.html
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^main$ page51486733.html [NC]
+RewriteRule ^main/$ page51486733.html [NC]
+
+RewriteRule ^zelinskaya-last-russian$ page55341259.html [NC]
+RewriteRule ^zelinskaya-last-russian/$ page55341259.html [NC]
+
+RewriteRule ^footerhtml$ page55342715.html [NC]
+RewriteRule ^footerhtml/$ page55342715.html [NC]
+
+RewriteRule ^pastukhov-war-in-telegram$ page55344709.html [NC]
+RewriteRule ^pastukhov-war-in-telegram/$ page55344709.html [NC]
+
+
